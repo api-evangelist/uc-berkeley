@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "UC Berkeley FERPA Training Completion API",
+        "description": "Given a CalNet UID, this API returns the date on which that person completed FERPA training as required for dealing with protected student data.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi-central.berkeley.edu\/"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
