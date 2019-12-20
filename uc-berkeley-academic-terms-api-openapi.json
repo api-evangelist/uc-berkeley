@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "UC Berkeley Academic Terms API",
+        "description": "This API uses the current date to calculate the current and coming year's academic terms. For the current term resource it returns the term code and term year. For the next terms resource it returns a set of terms that each include a term title, the combined year and code, and the code and year separately.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapis.berkeley.edu\/sisconnect"
+    ],
+    "paths": {
+        "\/GetAcademicCalendarNextTerms": {
+            "get": {
+                "summary": "Next Academic Terms",
+                "description": "Get a list of academic terms for the coming year.",
+                "operationId": "GetGetacademiccalendarnextterms",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "app_id",
+                        "in": "header",
+                        "description": "App ID"
+                    },
+                    {
+                        "name": "app_key",
+                        "in": "header",
+                        "description": "App Key"
+                    }
+                ]
+            }
+        },
+        "\/GetAcademicCurrentTerm": {
+            "get": {
+                "summary": "Current Academic Term",
+                "description": "Get the current academic term.",
+                "operationId": "GetGetacademiccurrentterm",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "app_id",
+                        "in": "header",
+                        "description": "App ID"
+                    },
+                    {
+                        "name": "app_key",
+                        "in": "header",
+                        "description": "App Key"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
