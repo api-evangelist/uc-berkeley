@@ -1,0 +1,89 @@
+{
+    "id": "76ca1603c932dce0f4cb42ff87c79d73",
+    "name": "UC Berkeley Academic Terms API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "d69a84527cc371f809ad6ea8071c9bf8",
+            "name": "Next Academic Terms",
+            "url": "httpsapis.berkeley.edu\/sisconnect\/GetAcademicCalendarNextTerms",
+            "description": "Get a list of academic terms for the coming year.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "app_id",
+                    "description": "App ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_key",
+                    "description": "App Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "76ca1603c932dce0f4cb42ff87c79d73",
+            "rawModeData": ""
+        },
+        {
+            "id": "25719a763bbd150eeb91a5d6a83b4f64",
+            "name": "Current Academic Term",
+            "url": "httpsapis.berkeley.edu\/sisconnect\/GetAcademicCurrentTerm",
+            "description": "Get the current academic term.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "app_id",
+                    "description": "App ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_key",
+                    "description": "App Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "76ca1603c932dce0f4cb42ff87c79d73",
+            "rawModeData": ""
+        }
+    ]
+}
