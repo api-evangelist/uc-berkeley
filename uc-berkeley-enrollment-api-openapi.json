@@ -1,0 +1,450 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "UC Berkeley Enrollment API",
+        "description": "Retrieves information about the relationship between students and class sections",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapis.berkeley.edu\/sis"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "descriptor": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "identifier": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "fieldValueList": {
+                "type": "object",
+                "properties": {
+                    "fieldName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fieldValues": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "cursor": {
+                "type": "object",
+                "properties": {
+                    "previous": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "catalogNumber": {
+                "type": "object",
+                "properties": {
+                    "prefix": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suffix": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "formatted": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "course": {
+                "type": "object",
+                "properties": {
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "term": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "session": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "class": {
+                "type": "object",
+                "properties": {
+                    "offeringNumber": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classTitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classTranscriptTitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classDescription": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "name": {
+                "type": "object",
+                "properties": {
+                    "familyName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "givenName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "middleName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suffixName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "formattedName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "preferred": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "disclose": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fromDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "toDate": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "email": {
+                "type": "object",
+                "properties": {
+                    "emailAddress": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "primary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "disclose": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fromDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "toDate": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "person": {
+                "type": "object",
+                "properties": {
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "names": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "emails": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "assignedInstructor": {
+                "type": "object",
+                "properties": {
+                    "printInScheduleOfClasses": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "meeting": {
+                "type": "object",
+                "properties": {
+                    "meetsDays": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startTime": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endTime": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "assignedInstructors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetingDescription": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "classSection": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetings": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "student": {
+                "type": "object",
+                "properties": {
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "names": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "emails": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "confidential": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "enrollmentStatus": {
+                "type": "object",
+                "properties": {
+                    "waitlistPosition": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fromDate": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "enrolledUnits": {
+                "type": "object",
+                "properties": {
+                    "taken": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "forAcademicProgress": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "forFinancialAid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "forBilling": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "grade": {
+                "type": "object",
+                "properties": {
+                    "mark": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "enrollment": {
+                "type": "object",
+                "properties": {
+                    "grades": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "enrollmentResponse": {
+                "type": "object",
+                "properties": {
+                    "enrollments": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "descriptorResponse": {
+                "type": "object",
+                "properties": {
+                    "fieldValueLists": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "enrollmentSuccessResponse": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "correlationId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "timeStamp": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "helpResource": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "responseType": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "descriptorSuccessResponse": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "correlationId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "timeStamp": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "helpResource": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "responseType": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "errorResponse": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "correlationId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "timeStamp": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "helpResource": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
