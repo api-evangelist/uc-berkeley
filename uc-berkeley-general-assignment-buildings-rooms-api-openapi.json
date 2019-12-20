@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "UC Berkeley General Assignment Buildings & Rooms API",
+        "description": "General assignment classrooms are those rooms on the Berkeley campus available for use by any academic department or student group, based on priority and availability. This API returns building, classroom, and classroom attribute information for those rooms.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapis.berkeley.edu\/"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
