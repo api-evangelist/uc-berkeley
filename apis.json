@@ -1,0 +1,224 @@
+{
+    "name": "UC Berkeley",
+    "description": "Founded in 1868, the University of California, Berkeley is one of the world\u2019s preeminent public universities, boasting a distinguished faculty (with 22 Nobel laureates to date), stellar research libraries, and more than 350 academic programs. At the he...",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+    "tags": [
+        "api lifeycle",
+        "california",
+        "have api",
+        "relative data",
+        "service api",
+        "universities",
+        "university leader",
+        "university portal"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "UC Berkeley Academic Terms API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-academic-terms-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-academic-terms-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-academic-terms-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Athlete API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/athlete-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/athlete-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/athlete-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "UC Berkeley Class API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-class-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-class-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-class-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "UC Berkeley Course API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-course-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-course-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-course-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "UC Berkeley Enrollment API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-enrollment-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-enrollment-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-enrollment-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "UC Berkeley FERPA Training Completion API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-ferpa-training-completion-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-ferpa-training-completion-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-ferpa-training-completion-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "UC Berkeley General Assignment Buildings & Rooms API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-general-assignment-buildings-rooms-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-general-assignment-buildings-rooms-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-general-assignment-buildings-rooms-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "UC Berkeley",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/270-uc-berkeley.jpg",
+            "humanURL": "http:\/\/berkeley.edu",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/university-of-california-berkeley"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/university-of-california-berkeley"
+        },
+        {
+            "type": "Email",
+            "url": "webmaster@berkeley.edu"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/UCBerkeley"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/api-central.berkeley.edu\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/berkeley.edu"
+        }
+    ]
+}
