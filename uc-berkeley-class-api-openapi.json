@@ -1,0 +1,597 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "UC Berkeley Class API",
+        "description": "Retrieves information about classes, which are groups of associated class sections",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapis.berkeley.edu\/sis"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "descriptor": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "identifier": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "fieldValueList": {
+                "type": "object",
+                "properties": {
+                    "fieldName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fieldValues": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "cursor": {
+                "type": "object",
+                "properties": {
+                    "previous": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "association": {
+                "type": "object",
+                "properties": {
+                    "primary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "primaryAssociatedSectionId": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "name": {
+                "type": "object",
+                "properties": {
+                    "familyName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "givenName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "middleName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suffixName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "formattedName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "email": {
+                "type": "object",
+                "properties": {
+                    "emailAddress": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "person": {
+                "type": "object",
+                "properties": {
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "names": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "emails": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "assignedInstructor": {
+                "type": "object",
+                "properties": {
+                    "assignmentNumber": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "printInScheduleOfClasses": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "meeting": {
+                "type": "object",
+                "properties": {
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsDays": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsMonday": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsTuesday": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsWednesday": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsThursday": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsFriday": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsSaturday": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetsSunday": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startTime": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endTime": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "assignedInstructors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetingDescription": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "exam": {
+                "type": "object",
+                "properties": {
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startTime": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endTime": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "catalogNumber": {
+                "type": "object",
+                "properties": {
+                    "prefix": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suffix": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "formatted": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "course": {
+                "type": "object",
+                "properties": {
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transcriptTitle": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "term": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "session": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "allowedUnits": {
+                "type": "object",
+                "properties": {
+                    "minumium": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maximum": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "forAcademicProgress": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "forFinancialAid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "price": {
+                "type": "object",
+                "properties": {
+                    "amount": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "classMaterial": {
+                "type": "object",
+                "properties": {
+                    "sequenceNumber": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "author": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "isbn": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "yearPublished": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "publisher": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "edition": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "assignedClassMaterials": {
+                "type": "object",
+                "properties": {
+                    "noneAssigned": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instructions": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classMaterials": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "enrollmentStatus": {
+                "type": "object",
+                "properties": {
+                    "enrolledCount": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "waitlistedCount": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "minEnroll": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maxEnroll": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maxWaitlist": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instructorAddConsentRequired": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instructorDropConsentRequired": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "fullClass": {
+                "type": "object",
+                "properties": {
+                    "offeringNumber": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classTitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classTranscriptTitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classDescription": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "contactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "blindGrading": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "lastUpdated": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "lastCancelled": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "new": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "anyPrintInScheduleOfClasses": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "anyPrintInstructors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "anyFeesExist": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "minimalClass": {
+                "type": "object",
+                "properties": {
+                    "offeringNumber": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classTitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classTranscriptTitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "classDescription": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "classSection": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "startDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "endDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "new": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "updatedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "cancelledDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "printInScheduleOfClasses": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "graded": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "feesExist": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "characteristics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "roomShare": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "roomCharacteristics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "meetings": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "exams": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "apiResponse": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "correlationId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "timeStamp": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "helpResource": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
