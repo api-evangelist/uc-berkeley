@@ -1,0 +1,170 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Athlete API",
+        "description": "Work with information about student-athlete participation.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapis.berkeley.edu\/uat\/sis"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "descriptor": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "identifier": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "participation": {
+                "type": "object",
+                "properties": {
+                    "ncaaEligible": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "toDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "comments": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "athleteSport": {
+                "type": "object",
+                "properties": {
+                    "currentParticipant": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "enteredOnFinancialAid": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "participations": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "athlete": {
+                "type": "object",
+                "properties": {
+                    "athleteSports": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "fieldValueList": {
+                "type": "object",
+                "properties": {
+                    "fieldName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fieldValues": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ApiPostRequest": {
+                "type": "object",
+                "properties": {
+                    "studentId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sportCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "participationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "currentParticipant": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ncaaEligible": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "enteredOnFinancialAid": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fromDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "cursor": {
+                "type": "object",
+                "properties": {
+                    "previous": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "apiResponse": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "correlationId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timeStamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "helpResource": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
