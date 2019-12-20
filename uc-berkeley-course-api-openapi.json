@@ -1,0 +1,433 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "UC Berkeley Course API",
+        "description": "Retrieves information about canonical courses as approved by the Academic Senate.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapis.berkeley.edu\/uat\/sis"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "descriptor": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "identifier": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "fieldValueList": {
+                "type": "object",
+                "properties": {
+                    "fieldName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fieldValues": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "cursor": {
+                "type": "object",
+                "properties": {
+                    "previous": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "catalogNumber": {
+                "type": "object",
+                "properties": {
+                    "prefix": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suffix": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "formatted": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "creditRange": {
+                "type": "object",
+                "properties": {
+                    "minUnits": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maxUnits": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "creditValue": {
+                "type": "object",
+                "properties": {
+                    "units": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "credit": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "crossListing": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "courses": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "repeatability": {
+                "type": "object",
+                "properties": {
+                    "repeatable": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maxCredit": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maxCount": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "preparation": {
+                "type": "object",
+                "properties": {
+                    "recommendedText": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "recommendedCourses": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "requiredText": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "requiredCourses": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "creditRestrictionCourse": {
+                "type": "object",
+                "properties": {
+                    "maxCount": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "creditRestriction": {
+                "type": "object",
+                "properties": {
+                    "restrictionText": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "restrictionCourses": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "typicallyOffered": {
+                "type": "object",
+                "properties": {
+                    "terms": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "comments": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "component": {
+                "type": "object",
+                "properties": {
+                    "primary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "contactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "minContactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maxContactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workloadHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "feesExist": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "format": {
+                "type": "object",
+                "properties": {
+                    "termsAllowed": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "sessionType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "aggregateContactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "aggregateMinContactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "aggregateMaxContactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "aggregateMinWorkloadHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "aggregateMaxWorkloadHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "anyFeesExist": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "components": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "formatsOffered": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "formats": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "summerOnly": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "minimalCourse": {
+                "type": "object",
+                "properties": {
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "course": {
+                "type": "object",
+                "properties": {
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transcriptTitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "departmentNicknames": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "blindGrading": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fromDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "toDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "updatedDate": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "printInCatalog": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "printInstructors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "feesExist": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instructorAddConsentRequired": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instructorDropConsentRequired": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "allowMultipleEnrollments": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "spansMultipleTerms": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "multipleTermNumber": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "contactHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "workloadHours": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "summerOnly": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "learningObjectives": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "studentOutcomeObjectives": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "proposedInstructors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "requirementsFulfilled": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "apiResponse": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "correlationId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "timeStamp": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "helpResource": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
