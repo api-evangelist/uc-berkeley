@@ -1,5 +1,5 @@
 {
-    "id": "76ca1603c932dce0f4cb42ff87c79d73",
+    "id": "4b9fea70336c24e4026e26d9ba59721c",
     "name": "UC Berkeley Academic Terms API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "d69a84527cc371f809ad6ea8071c9bf8",
+            "id": "dddff8cc2284dcddb4309cf133c803ae",
             "name": "Next Academic Terms",
             "url": "httpsapis.berkeley.edu\/sisconnect\/GetAcademicCalendarNextTerms",
             "description": "Get a list of academic terms for the coming year.",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "76ca1603c932dce0f4cb42ff87c79d73",
+            "collectionId": "4b9fea70336c24e4026e26d9ba59721c",
             "rawModeData": ""
         },
         {
-            "id": "25719a763bbd150eeb91a5d6a83b4f64",
+            "id": "bc7565630c07467f760aa74bce41ff54",
             "name": "Current Academic Term",
             "url": "httpsapis.berkeley.edu\/sisconnect\/GetAcademicCurrentTerm",
             "description": "Get the current academic term.",
@@ -82,7 +82,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "76ca1603c932dce0f4cb42ff87c79d73",
+            "collectionId": "4b9fea70336c24e4026e26d9ba59721c",
             "rawModeData": ""
         }
     ]
