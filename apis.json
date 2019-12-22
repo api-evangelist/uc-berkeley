@@ -12,8 +12,8 @@
         "university leader",
         "university portal"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -27,15 +27,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-academic-terms-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/uc-berkeley-academic-terms-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-academic-terms-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-academic-terms-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-academic-terms-api.json"
                 }
             ]
         },
@@ -49,15 +45,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/athlete-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/athlete-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/athlete-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/athlete-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/athlete-api.json"
                 }
             ]
         },
@@ -71,15 +63,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-class-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/uc-berkeley-class-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-class-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-class-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-class-api.json"
                 }
             ]
         },
@@ -93,15 +81,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-course-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/uc-berkeley-course-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-course-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-course-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-course-api.json"
                 }
             ]
         },
@@ -115,15 +99,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-enrollment-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/uc-berkeley-enrollment-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-enrollment-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-enrollment-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-enrollment-api.json"
                 }
             ]
         },
@@ -137,15 +117,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-ferpa-training-completion-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/uc-berkeley-ferpa-training-completion-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-ferpa-training-completion-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-ferpa-training-completion-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-ferpa-training-completion-api.json"
                 }
             ]
         },
@@ -159,15 +135,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-general-assignment-buildings-rooms-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/uc-berkeley-general-assignment-buildings-rooms-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-general-assignment-buildings-rooms-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-general-assignment-buildings-rooms-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley-general-assignment-buildings-rooms-api.json"
                 }
             ]
         },
@@ -181,21 +153,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/uc-berkeley\/master\/uc-berkeley-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/uc-berkeley-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/uc-berkeley.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Crunchbase",
             "url": "http:\/\/www.crunchbase.com\/company\/university-of-california-berkeley"
